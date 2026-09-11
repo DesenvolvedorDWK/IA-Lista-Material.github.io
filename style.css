@@ -1,55 +1,97 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background: #0056b3;
-    color: white;
-    padding: 20px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     text-align: center;
 }
+
+/* Cabeçalho */
+
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 25px;
+}
+
+/* Menu */
+
+.menu {
+    background-color: #0052a3;
+    padding: 10px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.menu button:hover {
+    background: #e6e6e6;
+}
+
+/* Conteúdo */
 
 .container {
     width: 90%;
     margin: 20px auto;
 }
 
+.cadastro,
+.lista {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
 input {
     padding: 10px;
     margin: 5px;
     width: 220px;
+    text-align: center;
 }
 
 button {
     padding: 10px 15px;
-    margin: 5px;
-    border: none;
     cursor: pointer;
-    background: #28a745;
-    color: white;
+    border: none;
     border-radius: 5px;
+    background-color: #0066cc;
+    color: white;
 }
 
 button:hover {
-    opacity: 0.9;
+    background-color: #004e9c;
+}
+
+.remover {
+    background-color: red;
 }
 
 table {
     width: 100%;
-    background: white;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-th,
-td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    text-align: center;
+th {
+    background-color: #0066cc;
+    color: white;
 }
 
-.remover {
-    background: #dc3545;
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
 }

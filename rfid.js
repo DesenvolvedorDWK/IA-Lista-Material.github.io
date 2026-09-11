@@ -15,7 +15,7 @@ function abrirRFID() {
 function processarRFID(
     tag,
     descricao,
-    quantidade = 1
+    quantidade,
 ) {
 
     if (!tag) return;

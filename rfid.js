@@ -1,42 +1,36 @@
 /*
-====================================
-MÓDULO RFID
-====================================
-Pronto para integração com leitor RFID real.
-Não gera códigos automaticamente.
-====================================
+=================================
+RFID.JS
+=================================
+Sem geração automática
+=================================
 */
 
 function abrirRFID() {
 
-    alert("Módulo RFID carregado e aguardando integração.");
+    console.log("RFID pronto.");
 
 }
 
-/*
-====================================
-FUNÇÃO PARA RECEBER UMA TAG RFID
-====================================
-Quando você tiver um leitor RFID real,
-ele poderá chamar esta função.
-====================================
-*/
+function processarRFID(
+    tag,
+    descricao,
+    quantidade = 1
+) {
 
-function processarRFID(tag, descricao, quantidade = 1) {
-
-    if (!tag) {
-        console.log("TAG RFID inválida.");
-        return;
-    }
+    if (!tag) return;
 
     pecas.push({
         codigo: tag,
-        descricao: descricao || "Peça RFID",
+        descricao: descricao,
         quantidade: quantidade
     });
 
     salvarDados();
     atualizarTabela();
 
-    console.log("TAG RFID registrada:", tag);
+    console.log(
+        "RFID registrado:",
+        tag
+    );
 }

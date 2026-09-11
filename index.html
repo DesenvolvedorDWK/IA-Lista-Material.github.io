@@ -1,67 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sistema Inteligente de Peças</title>
+    <title>Sistema Inteligente de Peças IA</title>
 
-    <link.css
+    <!-- CSS PRINCIPAL -->
+    <link rel="stylesheet" href="style.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></body>
+-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5n.jsscript>
 
-<header>
-    <h1>Sistema Inteligente de Peças IA</h1>
-    <p id="ultimaAtualizacao">Última atualização: -</p>
-</header>
+</head>
 
-<div class="container">
+<body>
 
-    <div class="cadastro">
+    <!-- CABEÇALHO -->
 
-        <h2>Cadastrar Peça</h2>
+    <header>
 
-        <input type="text" id="codigo" placeholder="Código">
+        <h1>Sistema Inteligente de Peças IA</h1>
 
-        <input type="text" id="descricao" placeholder="Descrição">
+        <p id="ultimaAtualizacao">
+            Última atualização: -
+        </p>
 
-        <input type="number" id="quantidade" placeholder="Quantidade">
+    </header>
 
-        <br>
+    <!-- MENU -->
 
-        <button onclick="adicionarPeca()">
-            Adicionar
+    <nav class="menu">
+
+        <button onclick="abrirDashboard()">
+            Dashboard IA
+        </button>
+
+        <button onclick="abrirRFID()">
+            RFID
         </button>
 
         <button onclick="exportarExcel()">
             Exportar Excel
         </button>
 
-    </div>
+    </nav>
 
-    <div class="lista">
+    <!-- CONTEÚDO -->
 
-        <h2>Lista de Peças</h2>
+    <main class="container">
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Código</th>
-                    <th>Descrição</th>
-                    <th>Quantidade</th>
-                    <th>Ação</th>
-                </tr>
-            </thead>
+        <section class="cadastro">
 
-            <tbody id="tabelaPecas"></tbody>
+            <h2>Cadastro de Peças</h2>
 
-        </table>
+            <input
+                type="text"
+                id="codigo"
+                placeholder="Código">
 
-    </div>
+            <input
+                type="text"
+                id="descricao"
+                placeholder="Descrição">
 
-</div>
+            <input
+                type="number"
+                id="quantidade"
+                placeholder="Quantidade">
 
-script.jsscript>
+            <br>
+
+            <button onclick="adicionarPeca()">
+                Adicionar Peça
+            </button>
+
+        </section>
+
+        <section class="lista">
+
+            <h2>Lista de Peças</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Código</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Ação</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tabelaPecas">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- SCRIPT PRINCIPAL IA -->
+    script.jsscript>
+
+    <!-- RFID -->
+    rfid.jsscript>
+
+    <!-- EXPORTAÇÃO EXCEL -->
+    excel.jsscript>
+
+    <!-- API / IA -->
+    api.jsscript>
 
 </body>
+
 </html>
